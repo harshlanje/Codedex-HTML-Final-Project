@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Catto Cafe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #FFF3CD;
+            text-align: center;
+        }
+        a,
+        ul {
+            text-decoration: none;
+            color: black;
+        }
+        hr {
+            width: 50%;
+            margin: 0 auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/restaurant.png" alt="restaurant" width="200">
+        <h1>Catto Cafe</h1>
+        <br><br>
+        <nav>
+            <ul>
+                <li><a href="#menu"><h3>Menu</h3></a></li>
+                <li><a href="#order-form"><h3>Order</h3></a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><hr><br>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <br><br>
+            <article>
+                <img src="images/ramen.png" alt="Ramen" width="100">
+                <h3>Ramen</h3>
+                <p>noodles served in a flavorful broth,<br>with sliced pork, eggs and green onions.<br><br><b><i>399 INR</i></b></p>
+            </article>
+            <br><br>
+            <article>
+                <img src="images/Burger.png" alt="burger" width="100">
+                <h3>Burger</h3>
+                <p>Burger with chicken patty, toppings, and special sauces.<br><br><b><i>299 INR</i></b></p>
+            </article>
+            <br><br>
+            <article>
+                <img src="images/Cake.png" alt="cake" width="100">
+                <h3>Cake</h3>
+                <p>Sweet baked dessert, soft and creamy, tasty<br><br><b><i>149 INR</i></b></p>
+            </article>
+            <br><br>
+            <article>
+                <img src="images/salad.png" alt="salad" width="100">
+                <h3>Salad</h3>
+                <p>Healthy green salad with olive oil<br><br><b><i>99 INR</i></b></p>
+            </article>
+        </section>
+        <br><hr><br>
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <br>
+            <form>
+                <label for="ramen">Ramen </label><input id="ramen" type="number" min="0" max="15">
+                <label for="burger">Burger </label><input id="burger" type="number" min="0" max="15">
+                <label for="cake">Cake </label><input id="cake" type="number" min="0" max="15">
+                <label for="salad">Salad </label><input id="salad" type="number" min="0" max="15">
+                <br><br><p><b>Addons</b></p>
+                <input type="checkbox" value="addon"><label for="addon"> Coke</label>
+                <input type="checkbox" value="addon"><label for="addon"> Pepsi</label>
+                <input type="checkbox" value="addon"><label for="addon"> Fries</label>
+                <input type="checkbox" value="addon"><label for="addon"> Lemonade</label><br><br>
+
+                <textarea placeholder="Any special requests?" rows="7" cols="50"></textarea>
+                <br><br>
+                <input type="submit" value="Go to Checkout">
+                <br><br>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>Made with 💙 by PurrfectCatto</p>
+    </footer>
+</body>
+</html>
